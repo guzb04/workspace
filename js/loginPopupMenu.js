@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Cargar foto usuario
   let fotoUsuario =
     localStorage.getItem(`${userEmail}-icon`) ||
-    "../img/iconos_perfil/desconocido.png";
+    "img/iconos_perfil/desconocido.png";
 
   // Crear elemento nav
   const loginNavElement = document.createElement("li");
@@ -64,7 +64,7 @@ fotoDefaultArray.forEach(element => {
   let iconImg = document.createElement("img")
   iconButton.classList.add("opcion-icono")
   iconButton.setAttribute("data-icon", `./img/iconos_perfil/${element}`);
-  iconImg.src = `../img/iconos_perfil/${element}`;
+  iconImg.src = `img/iconos_perfil/${element}`;
 
   iconButton.appendChild(iconImg);
 
